@@ -19,11 +19,18 @@
   "version": "1.0.0",
   "description": "My webpack project",
   "name": "my-webpack-project",
+  "main": "index.js",
+  "private": true,
   "scripts": {
+    "test": "webpack configtest",
+    "webpack": "webpack",
     "build": "webpack --mode=production --define-process-env-node-env=production",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --define-process-env-node-env=production",
     "watch": "webpack --watch",
     "serve": "webpack serve"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
